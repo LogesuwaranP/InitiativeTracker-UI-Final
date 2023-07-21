@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto&display=swap");
+
+/* .userprofile-card {
+  height: 250px;
+  width: 200px;
+  padding: 20px 28px;
+  border-radius: 2px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  position: relative;
+}
+.title {
+  text-align: left;
+  margin-left: 150px;
+  position: relative;
+  top: -70px;
+  margin-left: 250px;
+}
+
+.Bar {
+  display: flex;
+  gap: 40px;
+  margin-left: 20px;
+  justify-content: center;
+  align-items: center;
+  top: -30px;
+  position: relative;
+  width: 75%;
+  flex-wrap: wrap;
+  margin-left: 200px;
+}
+
+.userprofile-date {
+  font-size: 12px;
+
+  display: flex;
+
+  font-size: small;
+
+  align-items: center;
+
+  justify-content: space-between;
+}
+
+.userprofile-icon {
+  display: flex;
+
+  justify-content: space-evenly;
+}
+
+.userprofile-detail b {
+  font-family: "Roboto", sans-serif;
+
+  color: #13266b;
+}
+
+.userprofile-detail {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 6px;
+}
+
+.userprofile-idea {
+  font-family: "Poppins", sans-serif;
+
+  font-size: 12px;
+
+  font-weight: 500;
+}
+
+.userprofile-approved {
+  color: #288034;
+}
+
+.userprofile-rejected {
+  color: #d62516;
+}
+
+.userprofile-content {
+  margin: 0;
+
+  padding: 0;
+
+  font-size: 12px;
+
+  font-family: "Poppins", sans-serif;
+}
+
+.userprofile-card hr {
+  border: 1px solid #13266b;
+
+  margin: 0;
+} */

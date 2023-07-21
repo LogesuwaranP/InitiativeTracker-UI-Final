@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto&display=swap');
+
+.usercard-front {
+  height: 330px;
+  width: 240px;
+  background-color: #fff;
+  color: #091644;
+  border-radius: 2px;
+  justify-content: space-around;
+
+  padding: 0 30px;
+
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+  position: relative;
+
+  transform-style: preserve-3d;
+
+  transition: transform 0.5s;
+
+  margin-bottom: 20px;
+}
+.usercard-back-drop-down{
+    border:1px solid #001489;
+    border-radius:5px ;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    width: 100px;
+    height: 30px;
+    background-color: #EEF0F4;
+}
+.usercard-back-Role{
+    position:relative;
+    margin: 10px;
+    display: fixed;
+    flex-direction: row;
+    row-gap: 10px;
+text-align: center;
+}
+.usercard-back {
+  height: 330px;
+  width: 240px;
+  background-color: #fff;
+  color: #091644;
+  border-radius: 2px;
+  justify-content: space-around;
+
+  padding: 0 30px;
+
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+  position: relative;
+
+  transform-style: preserve-3d;
+
+  transition: transform 0.5s;
+
+  margin-bottom: 20px;
+}
+
+.usercard-name {
+  font-family: "Poppins", sans-serif;
+ margin-top: 5px;
+}
+
+.usercard-mail {
+  font-family: "Roboto", sans-serif;
+font-size: small;
+ height: 30px;
+ display: flex;
+justify-content: center;
+}
+
+.usercard-img {
+  height: 110px;
+
+  width: 110px;
+
+  margin: auto;
+
+  background-color: #889bd8;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+.usercard-userimg {
+  height: 100px;
+
+  width: 100px;
+
+  border-radius: 50%;
+}
+
+.usercard-icon {
+  height: 50px;
+display: flex;
+justify-content: center;
+gap: 40px;
+}
+
+.usercard-bio {
+  display: flex;
+  font-size: 13px;
+  text-align: left;
+  align-items: center;
+  margin: 10px auto;
+  font-family: "Roboto", sans-serif;
+}
+
+.usercard-button {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.usercard-icons {
+  background-color: white;
+  border: 0px;
+  cursor: pointer;
+}
+
+.usercard-edit {
+   width: 100px;
+   height: 30px;
+}
+
+
+.usercard-badge {
+  color: #3b6ccf;
+}
+
+.usercard-flip-container {
+    width: 200px;
+  height: 200px;
+  perspective: 800px; /* Adjust the perspective value as needed */
+  position: relative;
+}
+    
+    .usercard-front, .usercard-back {
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+      -o-backface-visibility: hidden;
+        backface-visibility: hidden;
+        transition: transform 0.6s ease;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .usercard-back {
+        -webkit-transform: rotateY(180deg);
+        -moz-transform: rotateY(180deg);
+      -o-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+    
+        background: white;
+    }
+    .usercard-flip-container.flipped .usercard-front {
+        transform: rotateY(180deg);
+      }
+      
+      .usercard-flip-container.flipped .usercard-back {
+        transform: rotateY(0deg);
+      }
+      .usercard-back-con {
+        padding: 40px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 17px;
+    }
+    .usercard-submit {
+      padding: 5px 10px;
+      width: 100px;
+      height: 40px;
+      
+      }
+
+  .usercard-back-rating {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      align-content: stretch;
+      font-family: 'Roboto', sans-serif;
+  }
+  .usercard-back-name{
+    font-family: 'Poppins', sans-serif;
+  }
+  .usercard-back-rating{
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .user-page-main {
+    padding: 20px 50px;
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    grid-gap: 20px;
+    row-gap: 150px;
+    background-color: #d1d4e3;
+    margin-left: 70px;
+  }

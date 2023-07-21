@@ -1,0 +1,142 @@
+.editProfile-container{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #D1D4E3;
+    padding-top: 4%;
+    gap: 10px;
+}
+
+.editProfile-upload{
+    height: 65vh;
+    width: 330px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+      
+    
+}       
+
+.editProfile-content{
+    width: 600px;
+    height: 85vh;
+    border-radius: 5px;
+    background-color: #ffffff;
+    text-align: start;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: 0.5fr 3fr 0.5fr;
+    overflow-y: auto;  
+}
+
+.editProfile-title>h2{
+    color: #091644;    
+    padding: 8px 20px;
+}
+
+.editProfile-title{
+    height: 60px;
+    background-color: #e3e3e397;
+}
+
+
+.editProfile-info{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; 
+        
+}
+
+.editProfile-info>form{
+    width: 45%;    
+    margin: 5px 15px;
+}
+
+.editProfile-info>form>input{
+    height: 35px;
+    padding-left:10px;
+   
+}
+
+
+.bio{
+    width: 98%;
+    margin: 15px;    
+}
+
+
+.upload-photo{
+    width: 150px;
+    padding: 10px;
+    text-align: center;
+    margin: 30px auto 10px;
+}
+
+.picture{
+    height: 150px;
+    width: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 10px auto ;
+    border-color: #091644;
+}
+
+
+.picture>img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: auto;
+    padding: 10px;
+    background-color: #c4d1ffae;
+}
+
+.editProfile-icons{
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 110px;
+}
+
+.date-input{
+    padding: 5px;
+}
+
+
+.editProfile-usertype{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+        
+}
+
+
+/* .editProfile-footer{
+    
+   
+    
+} */
+
+.size-message{
+    width: 90%;
+    height: 80px;
+    background-color: #D1D4E3;
+    margin: 5px auto;
+    border-radius: 5px;
+    padding: 10px;
+    font-weight: 500;    
+}
+
+
+
+.update-info{
+    width: 150px;
+    padding: 10px;
+    text-align: center;
+    margin-left: 15px;    
+}

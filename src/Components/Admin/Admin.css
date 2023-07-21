@@ -1,0 +1,17 @@
+.Admin-card{
+
+    display: grid;
+
+    /* gap: 70px; */
+
+    grid-row-gap: 167px;
+
+    /* grid-column-gap: 5px; */
+
+    /* grid-gap: 136px; */
+
+    grid-template-columns: repeat(auto-fit, minmax(319px, 0fr));
+
+    margin-left: 7%;
+
+    }

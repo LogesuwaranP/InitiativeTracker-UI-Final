@@ -1,0 +1,147 @@
+.detailed-idea-container {
+  display: flex;
+  gap: 20px;
+  width: 93vw;
+  background-color: #d1d4e3;
+  height: 100vh;
+  margin-left: 100px;
+}
+.submit-idea-details {
+  width: 150px;
+
+  position: absolute;
+
+  right: 500px;
+
+  top: 60px;
+}
+.detailed-content h2 {
+  margin: 10px 0;
+  font-size: 18px;
+}
+.detailed-content {
+  width: 63vw;
+  height: 100vh;
+  background-color: #fff;
+}
+.EditFlex {
+  margin-left: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  left: -80px;
+}
+.DetailedViewEditIcon {
+  left: 100px;
+  height: 40px;
+  width: 40px;
+}
+.detailed-comments {
+  width: 30vw;
+  height: 100%;
+}
+
+.detailed-content-main {
+  width: 100%;
+  text-align: left;
+}
+
+.detailed-all {
+  width: 90%;
+  padding: 1px;
+  border-radius: 10px;
+  background: #eef0f4;
+  margin-left: 30px;
+}
+
+.detailed-all > div {
+  width: 90%;
+  display: flex;
+  /* background-color: aqua; */
+  align-items: center;
+  margin: 15px;
+  gap: 30px;
+}
+
+.detailed-all h4 {
+  font-size: 14px;
+  width: 150px;
+}
+
+.detailed-summary > p {
+  width: 100%;
+  font-size: 12px;
+  padding-left: 25px;
+}
+
+.long-description,
+.detailed-idea-status {
+  text-align: left;
+}
+
+.long-description > p {
+  /* background-color: #eef0f4; */
+  padding: 10px;
+  width: 95%;
+  height: 150px;
+  margin-left: 30px;
+  border-radius: 10px;
+  font-size: 12px;
+  text-align: justify;
+  overflow-x: auto;
+}
+
+.contributors-container {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  width: 500px;
+  gap: 10px;
+
+  .NAME-CARD {
+    flex: 0 0 auto;
+  }
+
+  -webkit-overflow-scrolling: touch;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.detailed-idea-status > div {
+  background-color: #eef0f4;
+  padding: 10px;
+  width: 90%;
+  margin-left: 30px;
+  border-radius: 10px;
+  /* display: flex; */
+}
+
+.detailed-idea-status > div > div {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.approver-status > p {
+  /* font-size: 12px; */
+  margin-left: 50px;
+}
+.img-icon {
+  width: 40px;
+  height: 40px;
+  object-fit: fill;
+}
+
+.detailed-comments {
+  padding-top: 15px;
+}
+
+.detailed-comments input {
+  height: 40px;
+  width: 90%;
+  padding-left: 10px;
+  margin-left: 25px;
+}

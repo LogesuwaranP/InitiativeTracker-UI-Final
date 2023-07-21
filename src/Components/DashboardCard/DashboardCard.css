@@ -1,0 +1,83 @@
+.CardContainer {
+  margin-left: 250px;
+  margin-top: 40px;
+  height: 210px;
+  width: 1010px;
+  background-color: #eef0f4;
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+  justify-content: center;
+
+  /* align-items: center; */
+}
+
+.Card * {
+  margin: 0;
+}
+
+.name {
+  margin-top: -40px;
+  margin-left: 20px;
+}
+
+.name2 {
+  margin-top: -40px;
+  margin-left: 20px;
+}
+
+.Card h2 {
+  margin-bottom: 5px;
+}
+
+.DashboardCard-cont {
+  /* margin-left: 0; */
+}
+
+.Color {
+  color: #889bd8;
+  font-size: 20px;
+}
+
+.color2 {
+  color: #091644;
+  font-size: 17px;
+}
+
+.color3 {
+  color: #676a7a;
+  font-size: 17px;
+  font-weight: 500;
+}
+.Card {
+  border: 2px solid #889bd8;
+  margin: 25px;
+  background-color: white;
+  height: 150px;
+  width: 290px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  /* justify-content: center; */
+  padding: 15px;
+  /* align-items: center; */
+}
+.img1 {
+  height: 60px;
+  width: 60px;
+  margin-left: 190px;
+  margin-top: -10px;
+}
+.img2 {
+  height: 65px;
+  width: 65px;
+  margin-left: 190px;
+  margin-top: -10px;
+}
+.img3 {
+  height: 75px;
+  width: 75px;
+  margin-left: 190px;
+  margin-top: -20px;
+}

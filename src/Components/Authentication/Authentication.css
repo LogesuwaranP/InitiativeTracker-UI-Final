@@ -1,0 +1,41 @@
+.authentication-wrapper{
+    width: 100vw;
+    height: 100vh;
+    background-color: #D1D4E3 ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #091644;
+}
+
+.authentication-container{
+    width: 70%;
+    height: 80%;
+    background-color: #091644;
+    border-radius: 5px;
+    display: flex;
+    overflow: hidden;
+}
+.authentication-image{
+    height: 100%;
+    width: 60%;
+    background-color: #151b31;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    /* background-image: url("https://media.zenfs.com/en/prnewswire.com/3b526de689468d054cc01fa2e88f0ab9?hl=en_GB"); */
+    
+}
+
+.authentication-image>img{
+    height:auto;
+    width: 100%;
+    object-fit: fill;
+}
+
+.authentication{
+    height: 100%;
+    width: 40%;
+    padding-top: 10px;
+    background-color: #EEF0F4;
+}

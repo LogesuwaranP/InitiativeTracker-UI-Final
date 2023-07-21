@@ -1,0 +1,69 @@
+.multiselect-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .multiselect-container .multiselect-selected-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    min-height: 36px;
+  }
+  
+  .multiselect-container .multiselect-selected-list .multiselect-selected-item {
+    display: flex;
+    align-items: center;
+    padding: 4px 8px;
+    margin-right: 4px;
+    border-radius: 4px;
+    background-color: #f0f0f0;
+  }
+  
+  .multiselect-container .multiselect-selected-list .multiselect-selected-item span {
+    margin-right: 4px;
+  }
+  
+  .multiselect-container .multiselect-selected-list .multiselect-selected-item .remove-icon {
+    cursor: pointer;
+    font-weight: bold;
+    color: #999;
+  }
+  
+  .multiselect-container .multiselect-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 4px;
+    z-index: 10;
+  }
+  
+  .multiselect-container .multiselect-dropdown ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .multiselect-container .multiselect-dropdown ul li {
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+  
+  .multiselect-container .multiselect-dropdown ul li:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .multiselect-container .multiselect-dropdown ul li.selected {
+    background-color: #007bff;
+    color: #fff;
+  }
+  

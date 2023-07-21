@@ -1,0 +1,40 @@
+.login-container{
+	height: 100%;
+	width: 100%;
+	padding: 30px 10px 10px;
+	display: flex;
+    align-items: center;
+	flex-direction: column;
+	gap: 20px;
+	color: #091644;
+}
+
+.login-container form{
+	width: 100%;
+	margin: 20px 0;
+	align-items: flex-start;
+}
+
+.login-container form>p{
+	padding: 0;
+	margin: 0;
+}
+
+.login-container input{
+	width:100%;
+	padding: 10px;
+	height: 40px;
+	margin: 0 auto;
+}
+
+.login-container>div{
+	width: 90%;
+	margin-top: 20px;
+}
+
+.login{
+	width: 80%;
+	padding: 10px;
+	font-size: 16px;
+	margin: 60px auto 0px;
+}

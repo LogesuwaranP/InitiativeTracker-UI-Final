@@ -1,0 +1,82 @@
+.ProfileBar {
+  height: 150px;
+  width: 100%;
+  background-color: #676a7a;
+  /* border-radius: 10px; */
+}
+
+.ProfileContainer {
+  position: relative;
+  height: 300px;
+  width: 1000px;
+  margin-left: 280px;
+  top: -90px;
+  background-color: #eef0f4;
+  z-index: 500;
+  border-radius: 10px;
+}
+
+.ProfileImage {
+  border-radius: 50%;
+  height: 120px;
+  width: 120px;
+  position: relative;
+  top: -40px;
+  z-index: 1000;
+  object-fit: cover;
+}
+
+.ProfileUser {
+  position: relative;
+  top: -40px;
+  z-index: 1000;
+  font-size: 20px;
+}
+
+.Bio {
+  justify-content: center;
+  text-align: center;
+  padding: 70px;
+  margin-top: -80px;
+}
+
+.role {
+  font-style: italic;
+  margin-top: -40px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.icon {
+  display: flex;
+  gap: 20px;
+  position: relative;
+  top: -50px;
+  justify-content: center;
+  height: 35px;
+}
+
+.box {
+  display: flex;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.myPost {
+  margin-top: 100px;
+  height: 50px;
+  width: 200px;
+  background-color: white;
+  /* position: relative;
+    top:-550px; */
+  z-index: 1000;
+  font-size: 25px;
+  /* margin-left: 500px; */
+  border-radius: 10px;
+  border: 1px solid #676a7a;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}

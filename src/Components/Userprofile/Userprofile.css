@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto&display=swap");
+
+.userprofile-card-front {
+  width: 228px;
+
+  border-radius: 2px;
+
+  background-color: #fff;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 20px;
+
+
+
+}
+
+.userprofile-input {
+  height: 59px;
+
+  width: 198px;
+}
+
+.userprofile-submit {
+  background-color: #091644;
+
+  font-family: "Poppins", sans-serif;
+
+  border-radius: 5px;
+  width: 100px;
+  padding: 5px 10px;
+
+  font-size: 16px;
+
+  font-weight: 500;
+
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 0em;
+
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #f5f5f5;
+}
+
+.userprofile-back-con {
+  /* padding: 40px 20px; */
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  flex-direction: column;
+
+  gap: 17px;
+}
+
+.userprofile-submit:hover {
+  cursor: pointer;
+
+  background-color: #1c55be;
+}
+
+.userprofile-submit-div {
+  display: flex;
+
+  justify-content: center;
+}
+
+.userprofile-back {
+  border-radius: 2px;
+
+  background-color: #fff;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 18px;
+}
+
+.userprofile-flip-container {
+  width: 200px;
+
+  height: 200px;
+
+  perspective: 800px; /* Adjust the perspective value as needed */
+
+  position: relative;
+}
+
+.userprofile-card-front,
+.userprofile-back {
+  backface-visibility: hidden;
+
+  transition: transform 0.6s ease;
+
+  position: absolute;
+
+  padding: 10px 20px;
+
+  top: 0;
+
+  left: 0;
+
+  text-align: left;
+  height: 313px;
+  border: 8px solid blanchedalmond;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.userprofile-back {
+  -webkit-transform: rotateY(180deg);
+
+  -moz-transform: rotateY(180deg);
+
+  -o-transform: rotateY(180deg);
+
+  transform: rotateY(180deg);
+
+  background: white;
+}
+
+.userprofile-flip-container.flipped .userprofile-card-front {
+  transform: rotateY(180deg);
+}
+
+.userprofile-flip-container.flipped .userprofile-back {
+  transform: rotateY(0deg);
+}
+
+.userprofile-date {
+  font-size: 12px;
+
+  display: flex;
+
+  font-size: small;
+
+  align-items: center;
+
+  justify-content: space-between;
+}
+
+.userprofile-icon {
+  display: flex;
+
+  justify-content: space-evenly;
+}
+
+.userprofile-detail b {
+  font-family: "Roboto", sans-serif;
+
+  color: #13266b;
+}
+
+.userprofile-detail {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 6px;
+
+  height: 151px;
+}
+
+.userprofile-idea {
+  font-family: "Poppins", sans-serif;
+
+  font-size: 12px;
+
+  font-weight: 500;
+}
+
+.userprofile-approved {
+  color: #288034;
+}
+
+.userprofile-rejected {
+  color: #d62516;
+}
+
+.userprofile-content {
+  margin: 0;
+
+  padding: 0;
+
+  font-size: 12px;
+
+  font-family: "Poppins", sans-serif;
+}
+
+.userprofile-card hr {
+  border: 1px solid #13266b;
+
+  margin: 0;
+}
+
+.userprofile-reason {
+  font-family: "Roboto", sans-serif;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 10px;
+}
+
+.back-text{
+  display: flex;
+  justify-content: space-between;
+}
+
+.userprofile-card {
+  border-radius: 2px;
+
+  background-color: #fff;
+
+  display: flex;
+
+  flex-direction: column;
+
+  position: relative;
+}
+
+.approver {
+  padding: 20px 50px;
+  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  grid-gap: 20px;
+  row-gap: 150px;
+  margin-left: 70px;
+  height: 100vh;
+  width: 100wh;
+}

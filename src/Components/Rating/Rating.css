@@ -1,0 +1,17 @@
+.star-rating {
+    font-size: 24px;
+    color: #ccc;
+    cursor: pointer;
+  }
+  
+  .star-rating:hover,
+  .star-rating:hover ~ .star-rating {
+    color: #ffca28;
+  }
+  
+  .star-rating.selected,
+  .star-rating.selected ~ .star-rating,
+  .star-rating.selected:hover ~ .star-rating {
+    color: #ffca28;
+  }
+  

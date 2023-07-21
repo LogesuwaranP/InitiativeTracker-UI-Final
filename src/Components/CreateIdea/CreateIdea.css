@@ -1,0 +1,116 @@
+
+.create-idea-main{
+    width: 100vw;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2; 
+    
+}
+
+.create-idea-main label{
+    font-size: 16px;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.696);
+}                        
+
+.cancel:hover{
+    cursor: pointer;
+}
+
+.create-idea-form{
+    
+    width: 35%;
+    height: 80vh;
+    background-color: #D1D4E3;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;   
+    align-items: center;
+    overflow-y: auto;
+    border-radius: 5px;
+    /* padding: auto 25px; */
+
+
+}
+
+.create-idea-title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.create-idea-title>form{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 92%;   
+   
+
+    
+}
+
+.create-idea-title>form>input{
+    width: 100%;
+    height: 40px;  
+    padding-left:10px;
+    
+}
+
+.create-idea-summary{
+    width: 96.5%;
+    text-align: left;
+    padding-left: 15px;
+}
+
+.submit-idea{
+    width: 100%;
+    height: 60px;
+    
+}
+
+.submit-idea>div{
+    width: 150px;
+    padding: 10px;
+    text-align: center;
+    margin-right: 35px;  
+    float: right;
+}
+
+.create-idea-owner{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 90%;
+    margin: 20px auto;
+    gap: 10px;
+}
+
+.multiselect-container{
+    /* background-color: rgb(255, 255, 255); */
+    width: 92%;    
+    border-radius: 5px;
+    text-align: left;
+    margin: 10px 0;
+}
+
+.cancel{
+    position: relative;
+    left:  250px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.cancel:hover{
+    cursor: pointer;
+}

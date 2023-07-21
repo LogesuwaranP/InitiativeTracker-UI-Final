@@ -1,0 +1,31 @@
+.comments-container{
+    width:  90%;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 5px 10px;
+    text-align: left;
+    margin: 10px auto;
+}
+
+.comments-lable>div{
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+
+
+}
+
+.comments-lable img{
+    width: 30px;
+    height: 30px;
+}
+
+.comments-lable p{
+    font-size: 12px;
+}
+
+.comments-lable{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto&display=swap");
+
+.App {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  -webkit-overflow-scrolling: touch;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+input {
+  font-size: 14px;
+  border: 1px solid #777676;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+  padding: auto 10px;
+}
+label {
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+.ERROR {
+  font-size: 12px;
+  color: red;
+}
+.SUBMIT {
+  background-color: #091644;
+  font-family: "Poppins", sans-serif;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.SUBMIT:hover {
+  cursor: pointer;
+  background-color: #1c55be;
+}
+
+textarea {
+  margin: 0;
+  width: inherit;
+  font-size: 14px;
+  border: 1px solid #777676;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.LINK {
+  color: #091644;
+  margin: auto 15px;
+  text-decoration: underline;
+}
+
+.LINK:hover {
+  color: #1c55be;
+  cursor: pointer;
+}
+
+.NAME-CARD {
+  min-width: 150px;
+  height: 40px;
+  background-color: #ffffffb2;
+  border-radius: 30px;
+  padding-left: 5px;
+  display: flex;
+  align-items: center;
+  border: 1px solid gray;
+}
+
+.NAME-CARD img {
+  width: 30px;
+  height: 30px;
+}
