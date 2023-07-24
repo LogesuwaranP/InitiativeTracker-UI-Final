@@ -187,6 +187,7 @@ gap: 40px;
       flex-direction: row;
       justify-content: center;
       align-items: center;
+      width: max-content;
       align-content: stretch;
       font-family: 'Roboto', sans-serif;
   }

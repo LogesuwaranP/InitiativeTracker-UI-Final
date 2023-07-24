@@ -58,7 +58,7 @@ export default function DashboardCard() {
       <div className="Card">
         <div>
           <h2 className="Color">{highestlike?.noofpost}</h2>
-          <h5 className="color2"> User with Post</h5>
+          <h5 className="color2"> User with Maximum Post</h5>
         </div>
         <img
           className="img3"

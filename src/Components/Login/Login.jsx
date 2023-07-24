@@ -47,9 +47,8 @@ const Login = () => {
     <div className="login-container">
       <div>
         <h1>Welcome Back!</h1>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam,
-          dolor.
+        <p style={{fontSize:"15px"}}>
+        The NAF Initiatives tracker is a way for everyone to record ideas. The ideas can then be evaluated and converted to initiatives taken to implementation.
         </p>
       </div>
       <div className="login-form">

@@ -6,6 +6,7 @@ import { useContext } from "react";
 import AnimatedMulti from "../CuzDrop/DropDown";
 import axios from "axios";
 import errors from "validators/lib/errors";
+import { useEffect } from "react";
 
 const CreateIdea = ({ setToggle }) => {
   const [selectedItems, setSelectedItems] = useState([]);
@@ -21,6 +22,11 @@ const CreateIdea = ({ setToggle }) => {
     auth,
   } = useContext(DataContext);
   // const [ideastatus,setideastatus]=useState("")
+
+  useEffect(()=>{
+    setSummary("")
+    setDescription("")
+  },[])
 
   function create() {
     // axios.post
@@ -51,7 +57,7 @@ const CreateIdea = ({ setToggle }) => {
       <div className="create-idea-form">
         <div className="create-idea-owner">
           <div className="profile"></div>
-          <h2>User Name</h2>
+          <h2>{auth.username}</h2>
           <div className="cancel" onClick={() => setToggle(false)}>
             X
           </div>
@@ -60,6 +66,7 @@ const CreateIdea = ({ setToggle }) => {
           <form action="">
             <label htmlFor="Name">Enter Title</label>
             <input
+            required
               placeholder="Enter Title"
               value={title}
               onChange={(e) => setTitle(e.target.value)}
@@ -67,7 +74,7 @@ const CreateIdea = ({ setToggle }) => {
           </form>
         </div>
         <div className="multiselect-container">
-          <label>Add Contri</label>
+          <label>Add Contributors</label>
           <AnimatedMulti setContributors={setContributors} />
         </div>
         <div className="create-idea-summary">
@@ -81,7 +88,7 @@ const CreateIdea = ({ setToggle }) => {
           />
         </div>
         <div className="create-idea-summary">
-          <label htmlFor="Name">Description</label>
+          <label htmlFor="Name">Enter Description</label>
           <TextBox
             mxhight={150}
             mihight={150}

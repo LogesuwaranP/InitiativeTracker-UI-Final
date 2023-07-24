@@ -5,10 +5,19 @@ import { useState } from "react";
 import { useEffect } from "react";
 import axios from "axios";
 import Search from "../Search/Search";
+import { useNavigate } from "react-router-dom";
 
 const ApproverPage = () => {
   const { column1Items, commonText, setCommonText } = useContext(DataContext);
   const [pending, setPending] = useState([]);
+  // useLayoutEffect(()=>{
+
+  // },[])
+  const navigate = useNavigate();
+  if( JSON.parse(sessionStorage.getItem("auth")).role!=="Approver")
+  {
+    navigate("/");
+  }
   useEffect(() => {
     var all = [];
     axios
@@ -30,27 +39,7 @@ const ApproverPage = () => {
       });
   }, []);
 
-  // const handleCall=()=>{
-  //   axios
-  //     .get("https://localhost:7265/api/Idea/newidea")
-  //     .then((response) => {
-  //       setPending(response.data);
-  //       axios
-  //         .get("https://localhost:7265/api/Idea/inreview")
-  //         .then((response2) => {
-  //           // setPending(...pending, ...response.data);
-  //           setPending([...response.data, ...response2.data]);
-  //         })
-  //         .catch((errors) => {
-  //           console.log(errors);
-  //         });
-  //     })
-  //     .catch((errors) => {
-  //       console.log(errors);
-  //     });
-  // }
 
-  // console.log(column1Items[0].props);
 
   return (
     <div className="approver-container">

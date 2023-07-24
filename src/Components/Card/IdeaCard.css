@@ -31,12 +31,13 @@
 .profile{
     width: 30px;
     height: 30px;
-    background-color: rgb(5, 19, 109);
+    /* background-color: rgb(5, 19, 109); */
     border-radius: 50%;
     text-align: center;
     font-weight: 600;
     color: #ffffff;
     padding-top: 5px;
+    
 }
 
 .ideacard-container p{

@@ -30,8 +30,8 @@ const SignUp = () => {
 
 
     function finalCheck(e) {
-      //  handleBlur(e);
-      //  handleSubmit(e);
+       handleBlur(e);
+       handleSubmit(e);
        if(errors.email||errors.password||errors.confirmPassword||errors.email)   
        {
 
@@ -49,6 +49,9 @@ const SignUp = () => {
             } ).then((response)=>{
                 console.log(response.data);
                 navigate("/");
+
+            }).catch((errors)=>{
+              console.log(errors);
 
             })
             

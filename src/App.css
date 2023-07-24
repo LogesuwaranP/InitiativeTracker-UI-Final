@@ -49,6 +49,7 @@ form {
 .SUBMIT:hover {
   cursor: pointer;
   background-color: #1c55be;
+  /* background-image: url("https://cdn-icons-png.flaticon.com/512/236/236832.png?w=740&t=st=1689900133~exp=1689900733~hmac=82b232f3a0ae0488566428edd40ab111a5913c86334658144f39f409408916b2"); */
 }
 
 textarea {
@@ -87,4 +88,8 @@ textarea {
 .NAME-CARD img {
   width: 30px;
   height: 30px;
+}
+
+.profile{
+  background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.w3schools.com%2Fhowto%2Fhowto_css_image_avatar.asp&psig=AOvVaw2JCsQoJHQwWQEk71zEZMvR&ust=1689993401532000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCOi-y5finoADFQAAAAAdAAAAABAE");
 }

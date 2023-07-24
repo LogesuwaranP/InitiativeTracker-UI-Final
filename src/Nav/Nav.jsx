@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import PostAddOutlinedIcon from "@mui/icons-material/PostAddOutlined";
 import "./Nav.css"; // Import your CSS file
 import { Link } from "react-router-dom";
 import { useContext } from "react";
@@ -39,13 +39,55 @@ const Sidebar = () => {
 
                 <ul className={`sub-menu ${showMenu ? "" : "blank"}`}>
                   <li>
-                    <a className="link_name">Category</a>
+                    <a className="link_name">Dashboard</a>
                   </li>
                 </ul>
               </li>
             </Link>
+  <Link to="/Profile">
 
-            <Link to="/profile">
+              <li>
+
+                <a>
+
+                  <PostAddOutlinedIcon
+
+                    sx={{
+
+                      color: "#FFF",
+
+                      marginLeft: "28px",
+
+                      marginRight: "25px",
+
+                    }}
+
+                  />
+
+                  <span className="link_name"> My Post</span>
+
+                </a>
+
+                <ul className={`sub-menu ${showMenu ? "" : "blank"}`}>
+
+                  <li>
+
+                    <a className="link_name">My Post</a>
+
+                  </li>
+
+                </ul>
+
+              </li>
+
+            </Link>
+
+
+
+
+            <Link to="/Dashboard"></Link>
+
+            <Link to="/Dashboard">
               <li>
                 <a>
                   <i className="bx bx-line-chart"></i>
@@ -66,7 +108,7 @@ const Sidebar = () => {
                 <li>
                   <a>
                     <i className="bx bx-compass"></i>
-                    <i class="bi bi-check"></i>
+                    {/* <i class="bi bi-check"></i> */}
                     <span className="link_name">Pending</span>
                   </a>
 

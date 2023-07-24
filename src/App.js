@@ -27,7 +27,7 @@ function App() {
         <Route path='/' element={<DragAndDrop/>}/>
         {/* <Route path='/user' element={<UserPg/>} />
         <Route path='/admin' element={<Admin/>} /> */}
-        {/* <Route path='/user' element={<User/>} /> */}
+        <Route path='/Profile' element={<Profile/>} />
         <Route path='/mail' element={<NewIdea/>}/>
         <Route path='/login' element={<Authentication/>}/>
         <Route path='/idea-detailes/:id' element={<DetailedView/>}/>
@@ -38,6 +38,9 @@ function App() {
         <Route path='/Dashboard' element={<Dashboard/>}/>
         {/* <Route path='/MessageBox' element={<MessageBox text={"success"}/>}/> */}
         <Route path='/dashboard' element={<Dashboard/>}/>
+        <Route path='/userprofile/:id' element={<Userprofile/>}/>
+
+        
       </Routes>
       
       </DataProvider>

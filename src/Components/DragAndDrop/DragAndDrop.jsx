@@ -67,6 +67,29 @@ const DragAndDrop = () => {
     setColumn4Items(array);
   }
 
+  // useEffect(()=>{
+  //   setInterval(()=>{
+  //     axios.get("https://localhost:7265/api/Idea/inprogess").then((response) => {
+  //       asign1(response.data);
+  //     }).catch(()=>{
+
+  //     });
+  //     axios.get("https://localhost:7265/api/Idea/inreview").then((response) => {
+  //     // console.log(response.data);
+  //       asign2(response.data);
+  //     }).catch(()=>{
+        
+  //     });;
+  //     axios.get("https://localhost:7265/api/Idea/done").then((response) => {
+  //       // console.log(response.data);
+  //       asign3(response.data);
+  //     }).catch(()=>{
+        
+  //     });
+  //   },30000)
+
+  // },[])
+
   function asign3(data) {
     var array = [];
     data.map((item) => {
@@ -121,7 +144,7 @@ const DragAndDrop = () => {
     if (targetColumn === "Done") return;
     if (targetColumn === "New Idea") return;
 
-    console.log();
+    console.log(newAuth);
 
     if (draggingItem) {
       switch (targetColumn) {
@@ -276,7 +299,7 @@ const DragAndDrop = () => {
                 key={index}
                 className="item"
                 draggable={
-                  auth.role == "Admin" || item?.props?.name == auth.name
+                  newAuth.role == "Admin" || item.props.name==newAuth.username
                     ? "true"
                     : "false"
                 }
@@ -301,7 +324,7 @@ const DragAndDrop = () => {
                 key={index}
                 className="item"
                 draggable={
-                  auth.role == "Admin" || item?.props?.name == auth.name
+                  newAuth.role == "Admin" || item?.props?.name == newAuth.username
                     ? "true"
                     : "false"
                 }
@@ -326,7 +349,7 @@ const DragAndDrop = () => {
               <div
                 key={index}
                 className="item"
-                draggable={auth.role=="Admin"||item?.props?.name==auth.name?"true":"false"}
+                draggable={newAuth.role == "Admin" || item?.props?.name == newAuth.username?"true":"false"}
 
                 // {authdraggable}
                 onDragStart={(e) => handleDragStart(e, item, "In Review")}

@@ -114,16 +114,32 @@ const DetailedView = () => {
   }, []);
 
   const EditDetails = () => {
-    setToggle(false);
+
+    if(JSON.parse(sessionStorage.getItem("auth")).username==data.user)
+    {
+      
+      setToggle(false);
+    }
+    
   };
 
   const deleted = () => {
-    axios
+    console.log(data);
+    if(sessionStorage.getItem("auth").username==data.user)
+    {
+      axios
       .put(`https://localhost:7265/api/Idea/delete/${id}`)
       .then(() => {
         navigate("/");
       })
-      .then(() => {});
+      .then(() => {
+        
+      }).catch(()=>{
+
+      });
+      console.log("--------");
+    }
+    
   };
 
   const save = () => {
@@ -169,10 +185,10 @@ const DetailedView = () => {
   const fileName = "mysamplefile"; // here enter filename for your excel file
 
   React.useEffect(() => {
-    // const fetchData = () =>{
-    //  axios.get('https://localhost:7265/api/Idea/excel').then(r => setData1(r.data) )
-    // }
-    // fetchData()
+    const fetchData = () =>{
+     axios.get('https://localhost:7265/api/Idea/excel').then(r => setData1(r.data) )
+    }
+    fetchData()
   }, []);
 
   return (
@@ -213,17 +229,15 @@ const DetailedView = () => {
                 </div>
 
                 <div className="submit-idea-details">
-                  <Tooltip title="Excel">
-                    <SimCardDownloadIcon
-                      apiData={data1}
-                      fileName={fileName}
-                      sx={{ marginRight: "12px" }}
-                    />
-                  </Tooltip>
+                <Tooltip title="Excel"><ExportToExcel apiData={data1} fileName={fileName} sx={{marginRight:"12px"}}/></Tooltip>
 
-                  <Tooltip title="Download">
-                    <CloudDownloadIcon />
-                  </Tooltip>
+<Tooltip title="Download">
+
+  <CloudDownloadIcon primary={true} onClick={handleExportWithComponent}/>
+
+</Tooltip>
+
+
                 </div>
 
                 <div className="detailed-all">
@@ -237,7 +251,7 @@ const DetailedView = () => {
                     </div>
                   </div>
 
-                  <div>
+                  {/* <div>
                     <h4>Contributors</h4>
 
                     <div className="total-container">
@@ -253,12 +267,12 @@ const DetailedView = () => {
                         <div className="NAME-CARD"></div>
                       </div>
                     </div>
-                  </div>
+                  </div> */}
 
                   <div>
                     <h4>Created on</h4>
 
-                    <p>{data.ideaCreatedDate}</p>
+                    <p>{data.ideacreatedtime}</p>
                   </div>
 
                   <div className="detailed-summary">
@@ -268,8 +282,8 @@ const DetailedView = () => {
                       {/* {data.shortdescription} */}
 
                       <TextBox
-                        mihight={64}
-                        mxhight={64}
+                        mihight={100}
+                        mxhight={100}
                         dis={toggle}
                         value={summary}
                         setValue={setSummary}
@@ -306,11 +320,11 @@ const DetailedView = () => {
                     <p>{data.status}</p>
                   </div>
 
-                  <div className="approver-status">
+                  {/* <div className="approver-status">
                     <p>Start Date</p>
 
                     <p>{data?.startDate}</p>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>

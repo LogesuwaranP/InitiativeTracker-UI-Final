@@ -7,6 +7,7 @@ import IconButton from "@mui/material/IconButton";
 import { useContext } from "react";
 import DataContext from "../../Data/DataContext";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 const Userprofile = ({
   createdTime,
   name,
@@ -17,9 +18,10 @@ const Userprofile = ({
   taskStatus,
 }) => {
   const [isFlipped, setIsFlipped] = useState(false);
-  const { authMiddleware, auth, summary, setSummary } = useContext(DataContext);
+  const { authMiddleware, auth, summary, setSummary,asign1 } = useContext(DataContext);
   const [status, setStatus] = useState("");
   console.log(taskStatus);
+  const navigate= useNavigate();
 
   const handleFlip = () => {
     axios
@@ -43,6 +45,11 @@ const Userprofile = ({
                 : "In Progress"
           })
           .then(() => {
+            axios.get("https://localhost:7265/api/Idea/newidea").then((res)=>{
+              asign1(res.data)
+
+            })
+            
             console.log(response.data);
             setSummary("");
             setIsFlipped(!isFlipped);
@@ -62,7 +69,7 @@ const Userprofile = ({
         >
           <div className="userprofile-date">
             {createdTime}{" "}
-            <IconButton>
+            <IconButton onClick={()=>navigate(`/idea-detailes/${id}`)}>
               <InfoIcon sx={{ color: "#13266b" }} />
             </IconButton>{" "}
           </div>

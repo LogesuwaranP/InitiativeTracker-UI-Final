@@ -106,6 +106,13 @@ export const DataProvider = ({ children }) => {
     setColumn2Items(array);
   }
 
+  useEffect(()=>{
+    console.log("sample test");
+
+
+  },[column1Items])
+  
+
   useEffect(() => {
     axios
       .get("https://localhost:7265/api/Idea/newidea")
@@ -163,6 +170,7 @@ export const DataProvider = ({ children }) => {
         setData,
         commonText,
         setCommonText,
+        asign1,asign2
       }}
     >
       {children}

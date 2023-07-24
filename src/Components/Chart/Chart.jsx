@@ -9,6 +9,8 @@ import {
   Tooltip,
 } from "chart.js";
 import "./Chart.css";
+import { useEffect, useState } from "react";
+import axios from "axios";
 ChartJS.register(
   CategoryScale,
   LinearScale,
@@ -17,6 +19,7 @@ ChartJS.register(
   Tooltip,
   Legend
 );
+
 const option = {
   responsive: true,
   plugins: {
@@ -27,6 +30,7 @@ const option = {
     },
   },
 };
+
 const data = {
   labels: ["IdeaStage", "ToDo", "Inprogress", "InReview", "Done"],
   datasets: [
@@ -39,6 +43,9 @@ const data = {
 };
 
 export default function Chart() {
+  const[val ,setValue] = useState([]);
+  var dataArr=[]
+ 
   return (
     <div className="BarContainer">
       <Bar options={option} data={data} />

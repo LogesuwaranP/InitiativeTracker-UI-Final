@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto&display=swap");
 
-/* .userprofile-card {
+.userprofile-card-viewcard {
   height: 250px;
   width: 200px;
   padding: 20px 28px;
@@ -11,8 +11,9 @@
   gap: 18px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   position: relative;
+  text-align: left;
 }
-.title {
+.title-viewcard {
   text-align: left;
   margin-left: 150px;
   position: relative;
@@ -20,7 +21,7 @@
   margin-left: 250px;
 }
 
-.Bar {
+.Bar-viewcard {
   display: flex;
   gap: 40px;
   margin-left: 20px;
@@ -33,7 +34,7 @@
   margin-left: 200px;
 }
 
-.userprofile-date {
+.userprofile-date-viewcard {
   font-size: 12px;
 
   display: flex;
@@ -45,19 +46,19 @@
   justify-content: space-between;
 }
 
-.userprofile-icon {
+.userprofile-icon-viewcard {
   display: flex;
 
   justify-content: space-evenly;
 }
 
-.userprofile-detail b {
+.userprofile-detail-viewcard b {
   font-family: "Roboto", sans-serif;
 
   color: #13266b;
 }
 
-.userprofile-detail {
+.userprofile-detail-viewcard {
   display: flex;
 
   flex-direction: column;
@@ -65,7 +66,7 @@
   gap: 6px;
 }
 
-.userprofile-idea {
+.userprofile-idea-viewcard {
   font-family: "Poppins", sans-serif;
 
   font-size: 12px;
@@ -73,15 +74,15 @@
   font-weight: 500;
 }
 
-.userprofile-approved {
+.userprofile-approved-viewcard {
   color: #288034;
 }
 
-.userprofile-rejected {
+.userprofile-rejected-viewcard {
   color: #d62516;
 }
 
-.userprofile-content {
+.userprofile-content-viewcard {
   margin: 0;
 
   padding: 0;
@@ -91,8 +92,8 @@
   font-family: "Poppins", sans-serif;
 }
 
-.userprofile-card hr {
+.userprofile-card-viewcard hr {
   border: 1px solid #13266b;
 
   margin: 0;
-} */
+}
